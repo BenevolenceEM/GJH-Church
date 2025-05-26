@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 html {
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #f5f3f5;
+    background-color: #ffffff;
 }
 
 body {
@@ -17,17 +17,19 @@ body {
 }
 
 nav {
+    background-color: #f5f3f5;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     width: 100%;
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
     justify-content: space-between;
 }
 
 nav img {
-    width: 90px;
+    width: 100px;
     height: auto;
 }
 
@@ -36,30 +38,105 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 ul{
     list-style: none;
+}
+
+nav li {
+    margin: 0px 30px;
 }
 
 .links {
     display: flex;
     align-items: center;
-    padding: 0px 0px 20px 0px;
+    padding-bottom: 20px;
 }
 
-nav li {
-    margin: 0 30px;
+.links li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .socialmedia img {
     width: 30px;
     height: auto;
+    padding-right: 8px;
+    position: relative;
+    z-index: 10;
 }
 
 section {
     width: 100%;
     margin: 100px auto;
+}
+
+.start {
+    position: relative;
+    top: 10px;
+}
+
+.start img{
+    margin-top: 80px;
+    width: 600px;
+    height: fit-content;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+
+.start img:hover {
+    transform: scale(1.1);
+}
+
+.start .maintext {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.start .secondtext {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100px;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.start .thirdtext {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100px;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.box {
+    padding: 10px;
+}
+
+.box h2{
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    border-left: 3px solid #000000;
+    border-right: 3px solid #000000;
+}
+
+.box p {
+    text-align: end;
+    padding-top: 15px;
+    font-style: italic;
+    
 }
