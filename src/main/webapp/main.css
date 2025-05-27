@@ -3,7 +3,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : May 23, 2025
+    Created : May 2025
     Author     : malik
 */
 html {
@@ -57,7 +57,7 @@ nav li {
     transform: scale(1.1);
 }
 
-.socialmedia img {
+.socials img {
     width: 30px;
     height: auto;
     padding-right: 8px;
@@ -65,12 +65,9 @@ nav li {
     z-index: 10;
 }
 
-section {
+.start {
     width: 100%;
     margin: 100px auto;
-}
-
-.start {
     position: relative;
     top: 10px;
 }
@@ -122,7 +119,7 @@ section {
 }
 
 .box {
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
 }
 
 .box h2{
@@ -138,5 +135,125 @@ section {
     text-align: end;
     padding-top: 15px;
     font-style: italic;
-    
+}
+
+.wrapper {
+    padding-bottom: 50px;
+}
+
+.wrapper h3 {
+    font-size: 35px;
+    padding-top: 25px; 
+}
+
+.line {
+    border-bottom: 2px solid gray;
+    width: 130px;
+    height: 3px;
+    border-radius: 30px;
+    margin: 0px auto;
+    background-color: gray;
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    line-height: 2;
+    justify-content: space-between;
+    margin-left: 30px;
+    padding-bottom: 50px;
+}
+
+.rows h4 {
+    text-transform: capitalize;
+}
+
+.rows a {
+    text-decoration: none;
+    border: 3px solid #f5f3f5;
+    border-radius: 8px;
+    color: #000000;
+    padding: 8px;
+    font-style: italic;
+}
+
+.rows a:hover {
+    color: #000000;
+    background-color: lightblue;
+}
+
+.events {  
+    margin-top: 10px;
+}
+
+.events h3 {
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+.events a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.events ul {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.events li {
+    padding: 0px 50px 10px 50px;
+}
+
+.events p {
+    font-style: italic;
+}
+
+.eventslist {
+    position: relative;
+}
+
+.eventslist img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.712);
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.eventslist:hover .link {
+    opacity: 1;
+}
+
+.link a {
+    display: inline-block;
+    border: 1px solid #f5f3f5;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.events .line {
+    margin-bottom: 20px;
+}
+
+.form {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+footer {
+    padding-top: 18px;
 }
