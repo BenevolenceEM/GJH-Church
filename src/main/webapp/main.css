@@ -141,7 +141,7 @@ nav li {
     padding-bottom: 50px;
 }
 
-.wrapper h3 {
+h3 {
     font-size: 35px;
     padding-top: 25px; 
 }
@@ -187,11 +187,6 @@ nav li {
     margin-top: 10px;
 }
 
-.events h3 {
-    font-size: 35px;
-    padding-top: 25px;
-}
-
 .events a {
     text-decoration: none;
     color: #000000;
@@ -228,7 +223,7 @@ nav li {
     height: 200px;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0.712);
     display: flex;
     opacity: 0;
     transition: 0.5s;
@@ -252,8 +247,56 @@ nav li {
 .form {
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
+    padding-bottom: 50px;
+}
+
+.formbox {
+    align-items: flex-start;
+    background-color: #f5f3f5;
+    padding: 60px;
+    width: 100%;
+}
+
+.formrow {
+    display: flex;
+}
+
+.formrow input {
+    width: 38%;
+    margin: 5px 20px 5px 10px;
+}
+
+textarea {
+    height: 150px;
+    width: 80%;
+    margin: 5px 10px;
+}
+
+.formbox input, .formbox textarea {
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.form input[type='submit'] {
+    color: #000000;
+    border: 2px solid gray;
+    border-radius: 6px;
+    display: flex;
+    font-style: italic;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 82%;
+    margin: 5px 10px;
+}
+
+.form input[type='submit']:hover {
+    background-color: lightblue;
 }
 
 footer {
-    padding-top: 18px;
+    padding-top: 25px;
 }
