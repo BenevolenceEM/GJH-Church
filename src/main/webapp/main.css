@@ -309,12 +309,37 @@ textarea {
 }
 
 .form input[type='submit']:hover {
-    background-color: lightblue;
+    background-color: #add8e6;
 }
 /*(Form) 5th Section CSS - End*/
 
 footer {
     padding-top: 25px;
+}
+
+/*Calendar CSS*/
+#calendar {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.fc {
+    padding-top: 220px;
+}
+
+.fc .fc-event-title:hover {
+    overflow-x: scroll;
+}
+
+.fc .fc-daygrid-dot-event {
+    flex-wrap: wrap;
+}
+
+:root {
+    --fc-button-text-color: #000;
+    --fc-button-bg-color: #f5f3f5;
+    --fc-button-hover-bg-color: #add8e6;
+    --fc-button-active-bg-color: #7a787adc;
 }
 
 /* Responsive CSS */
@@ -401,6 +426,10 @@ footer {
     .rows li, .events li {
         padding: 10px 0;
         width: auto;
+    }
+
+    .fc .fc-scroller .fc-scroller-liquid-absolute {
+        overflow-y: hidden;
     }
 }
 

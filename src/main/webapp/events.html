@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <title>GJH Church</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: [
+                {
+                    title: 'Summer Cookout',
+                    start: '2025-06-20T19:30:00'
+                },
+                {
+                    title: '4th of July Celebration',
+                    start: '2025-07-04T19:30:00'
+                },
+                {
+                    title: 'ABC Orphanage Homes Visit',
+                    start: '2025-08-16T12:30:00'
+                },
+                {
+                    title: 'Labor Day Celebration',
+                    start: '2025-09-01T19:30:00'
+                },
+                {
+                    title: 'Community Service',
+                    start: '2025-10-25T12:30:00'
+                },
+                {
+                    title: 'Thanksgiving Evening',
+                    start: '2025-11-23T18:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2025-06-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2025-06-12T14:30:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2025-06-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'https://google.com/',
+                    start: '2025-06-28'
+                }
+            ]
+        });
+        calendar.render();
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id='calendar'></div>
+
+    <header>
+        <nav aria-label="Main site navigation">
+            <a href="index.html" class="logo"> <img src="images/logo.png" alt="logo"> </a>
+            <ul class="links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="javascript:void(0)">About</a></li>
+                <li><a href="javascript:void(0)">Giving</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="javascript:void(0)">Opportunities</a></li>
+                <li><a href="">Members</a></li>
+                <li><a href="">Staff</a></li>
+            </ul>
+
+            <ul class="socials">
+                <li><a href="javascript:void(0)"> <img src="images/youtube.png" alt="youtube icon"> </a></li>
+                <li><a href="javascript:void(0)"> <img src="images/facebook.png" alt="facebook icon"> </a></li>
+                <li><a href="javascript:void(0)"> <img src="images/instagram.png" alt="instagram icon"> </a></li>
+            </ul>
+        </nav>
+    </header>
+  </body>
+</html>
