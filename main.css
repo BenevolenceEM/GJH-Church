@@ -75,6 +75,7 @@ h2, h3, footer {
 h3 {
     font-size: 35px;
     padding-top: 25px;
+    text-transform: capitalize;
 }
 
 /*(Start) 1st Section CSS - Start*/
@@ -144,7 +145,49 @@ h3 {
 }
 /*(Box) 2nd Section CSS - End*/
 
-/*(Wrapper) 3rd Section CSS - Start*/
+/*(Verses) 3rd Section CSS - Start*/
+.verses {
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: top;
+    padding: 30px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 600px;
+    min-height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+#verses-box {
+    font-size: 19px;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #ffffff;
+    padding: 10px 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.share-verses {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    background-color: #9c958256;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.share-verses:hover {
+    background-color: #6e685741;
+}
+/*(Verses) 3rd Section CSS - End*/
+
+/*(Wrapper) 4th Section CSS - Start*/
 .wrapper {
     padding-bottom: 50px;
     text-align: center;
@@ -190,9 +233,9 @@ h3 {
     color: #000000;
     background-color: lightblue;
 }
-/*(Wrapper) 3rd Section CSS - End*/
+/*(Wrapper) 4th Section CSS - End*/
 
-/*(Events) 4th Section CSS - Start*/
+/*(Events) 5th Section CSS - Start*/
 .events {  
     margin-top: 10px;
     text-align: center;
@@ -255,9 +298,9 @@ h3 {
     font-size: 18px;
     text-align: center;
 }
-/*(Events) 4th Section CSS - End*/
+/*(Events) 5th Section CSS - End*/
 
-/*(Form) 5th Section CSS - Start*/
+/*(Form) 6th Section CSS - Start*/
 .form {
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
@@ -311,7 +354,7 @@ textarea {
 .form input[type='submit']:hover {
     background-color: #add8e6;
 }
-/*(Form) 5th Section CSS - End*/
+/*(Form) 6th Section CSS - End*/
 
 footer {
     padding-top: 25px;
@@ -425,6 +468,16 @@ footer {
 
     .socials {
         flex-direction: column;
+    }
+
+    .verses {
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+    #verses-box {
+        padding: 8px;
+        font-size: 16px;
     }
 
     .wrapper, .events {
